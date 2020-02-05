@@ -1,0 +1,16 @@
+h1 {
+   color: black;
+   margin-top: 220px;
+   margin-left: 500px;
+   font-family: Helvetica;
+   font-weight: bolder;
+}
+form {
+    margin-left: 500px;
+    margin-bottom:60px;
+}
+p {
+    font-family:  Helvetica;
+    color: black;
+    font-weight: bolder;
+}
