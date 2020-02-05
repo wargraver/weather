@@ -2,6 +2,7 @@ const express = require('express')
 const path =require('path')
 const app = express()
 const request = require('request')
+const port = process.env.PORT ||3000
 const geocode=require('./utils2/geocod.js')
 const forecast=require('./utils2/forecast.js')
 const path2 = path.join(__dirname,'../public')
@@ -51,6 +52,6 @@ app.get('/wheater',(req,res)=>{
                 address:"SEARCH NOT FOUND"})
         })}
 })
-app.listen(3000,()=>{
+app.listen(port,()=>{
     console.log('server is up on port 3000')
 })

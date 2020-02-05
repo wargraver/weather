@@ -10,7 +10,7 @@ form.addEventListener('submit',(e)=>{
     const se = input.value
     console.log('searching')
     console.log(se)
-    fetch('http://localhost:3000/wheater?search='+se).then((response)=>{
+    fetch('/wheater?search='+se).then((response)=>{
          response.json().then((data)=>{
              if(data.day==undefined){
                  msg1.textContent='PLEASE TRY ANOTHER VALID LOCATION'
